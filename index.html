@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Liangchuan Wu · 吴良川 | Anhui University</title>
+  <meta name="description" content="Liangchuan Wu (吴良川), Anhui University. Research on Chang–Wilson–Wolff theory, Dunkl analysis, and two-weight inequalities; publications, preprints, and a research monograph.">
+  <link rel="canonical" href="https://wulchuan.github.io/">
+  <style>
+    :root { --paper:#fcfbf8; --ink:#222c36; --muted:#626d77; --blue:#245b7b; --line:#dce0df; --serif:Georgia,"Times New Roman","Songti SC","SimSun",serif; --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:24px; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.75 var(--sans); -webkit-font-smoothing:antialiased; }
+    a { color:var(--blue); text-underline-offset:4px; text-decoration-thickness:1px; }
+    a:hover { text-decoration:underline; }
+    a:focus-visible { outline:2px solid var(--blue); outline-offset:5px; border-radius:2px; }
+    .wrap { width:min(1080px,calc(100% - 96px)); margin-inline:auto; }
+    .skip { position:absolute; top:-100px; left:16px; background:white; padding:8px 16px; z-index:10; }
+    .skip:focus { top:12px; }
+    .topbar { display:flex; justify-content:space-between; align-items:center; gap:24px; padding:28px 0 24px; border-bottom:1px solid var(--line); }
+    .brand { color:var(--ink); font-size:14px; font-weight:600; text-decoration:none; flex-shrink:0; }
+    .brand span { margin-left:9px; font-weight:400; color:var(--muted); }
+    nav { display:flex; flex-wrap:wrap; gap:24px; font-size:13px; }
+    nav a { color:var(--muted); text-decoration:none; }
+    nav a:hover { color:var(--blue); }
+    .hero { display:grid; grid-template-columns:1fr 280px; align-items:center; gap:48px; padding:64px 0 57px; }
+    .eyebrow { color:var(--blue); font-size:11px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; margin:0 0 18px; }
+    h1 { margin:0; font:normal clamp(40px,5.5vw,62px)/1.15 var(--serif); letter-spacing:-.035em; }
+    .chinese-name { margin:12px 0 0; color:var(--muted); font:normal 26px/1.5 var(--serif); letter-spacing:.12em; }
+    .affiliation { border-left:2px solid var(--line); padding-left:26px; }
+    .affiliation p { margin:0; }
+    .affiliation .university { font-size:17px; font-weight:500; }
+    .affiliation .cn { color:var(--muted); font-size:14px; margin:1px 0 15px; }
+    .affiliation a { font-size:14px; overflow-wrap:anywhere; }
+    .section { display:grid; grid-template-columns:180px minmax(0,1fr); gap:42px; padding:38px 0; border-top:1px solid var(--line); }
+    h2 { margin:0; font:normal 23px/1.35 var(--serif); letter-spacing:-.02em; }
+    h2 .cn { display:block; margin-top:7px; font:13px/1.5 var(--sans); color:var(--muted); letter-spacing:.04em; }
+    .section-content > :first-child { margin-top:0; }
+    .section-content > :last-child { margin-bottom:0; }
+    .intro { font-size:17px; line-height:1.85; max-width:740px; margin:0 0 15px; }
+    .translation { color:var(--muted); font-size:15px; line-height:1.95; margin:0; }
+    .education-list { list-style:none; padding:0; margin:0; }
+    .education-entry { display:grid; grid-template-columns:142px minmax(0,1fr); gap:22px; }
+    .education-entry + .education-entry { margin-top:28px; }
+    .education-date { margin:2px 0 0; color:var(--muted); font-size:13px; font-variant-numeric:tabular-nums; }
+    .education-entry h3 { margin:0 0 7px; font:normal 21px/1.45 var(--serif); }
+    .education-entry h3 span { font:14px var(--sans); color:var(--muted); margin-left:10px; }
+    .education-degree { margin:0; font-size:15px; }
+    .education-cn, .education-advisor { margin:4px 0 0; font-size:13px; color:var(--muted); }
+    .papers { list-style:none; padding:0; margin:0; }
+    .paper { padding:0 0 27px; margin:0 0 27px; border-bottom:1px solid var(--line); }
+    .paper:last-child { margin-bottom:0; padding-bottom:0; border:0; }
+    .paper h3 { margin:0 0 8px; font:normal 21px/1.45 var(--serif); }
+    .paper h3 a { color:var(--ink); text-decoration:none; }
+    .paper h3 a:hover { color:var(--blue); text-decoration:underline; }
+    .math-inline { white-space:nowrap; }
+    .math-inline sup { font-size:.7em; line-height:0; }
+    .authors { margin:0 0 4px; color:var(--muted); font-size:13px; line-height:1.8; }
+    .journal { margin:0; font-size:13px; line-height:1.8; }
+    .paper-links { display:flex; gap:20px; flex-wrap:wrap; margin-top:10px; font-size:12px; }
+    .paper-links a { text-decoration:none; padding:2px 0; }
+    .paper-links a:hover { text-decoration:underline; }
+    .contact-email { display:inline-block; margin-bottom:11px; font-size:19px; overflow-wrap:anywhere; }
+    .contact-place { margin:0; color:var(--muted); font-size:14px; }
+    footer { display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; border-top:1px solid var(--line); padding:24px 0 34px; color:var(--muted); font-size:11px; }
+    footer a { color:var(--muted); text-decoration:none; }
+    @media (max-width:800px) {
+      .wrap { width:calc(100% - 48px); }
+      .hero { grid-template-columns:1fr 240px; gap:24px; padding:48px 0; }
+      .section { grid-template-columns:140px minmax(0,1fr); gap:24px; }
+      nav { gap:16px; }
+    }
+    @media (max-width:600px) {
+      .wrap { width:calc(100% - 40px); }
+      .topbar { display:block; padding:20px 0; }
+      nav { margin-top:16px; gap:12px 20px; font-size:12px; }
+      .hero { grid-template-columns:1fr; padding:38px 0; gap:26px; }
+      .affiliation { padding-left:16px; }
+      h1 { font-size:43px; }
+      .chinese-name { font-size:23px; }
+      .section { grid-template-columns:1fr; gap:22px; padding:30px 0; }
+      h2 .cn { display:inline; margin-left:12px; }
+      .intro { font-size:16px; }
+      .education-entry { grid-template-columns:1fr; gap:8px; }
+      .paper h3 { font-size:20px; }
+      footer { padding-top:21px; gap:6px; }
+    }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+    @media print {
+      body { background:white; color:black; font-size:11pt; }
+      .wrap { width:100%; }
+      .topbar,footer { display:none; }
+      .hero { padding:12pt 0 24pt; }
+      h1 { font-size:32pt; }
+      .section { padding:18pt 0; }
+      .paper { break-inside:avoid; }
+      a { color:inherit; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content / <span lang="zh-Hans">跳至正文</span></a>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="#main">Liangchuan Wu <span lang="zh-Hans">吴良川</span></a>
+      <nav aria-label="Main navigation / 主导航">
+        <a href="#research">Research <span lang="zh-Hans">研究</span></a>
+        <a href="#education">Education <span lang="zh-Hans">教育</span></a>
+        <a href="#publications">Publications <span lang="zh-Hans">论文</span></a>
+        <a href="#preprints">Selected preprints <span lang="zh-Hans">精选预印本</span></a>
+        <a href="#monograph">Monograph <span lang="zh-Hans">专著</span></a>
+        <a href="#contact">Contact <span lang="zh-Hans">联系</span></a>
+      </nav>
+    </header>
+    <main id="main">
+      <div class="hero">
+        <div>
+          <p class="eyebrow">Harmonic analysis · <span lang="zh-Hans">调和分析</span></p>
+          <h1>Liangchuan Wu</h1>
+          <p class="chinese-name" lang="zh-Hans">吴良川</p>
+        </div>
+        <div class="affiliation">
+          <p class="university">Anhui University</p>
+          <p class="cn" lang="zh-Hans">安徽大学</p>
+          <a href="mailto:wuliangchuan@ahu.edu.cn">wuliangchuan@ahu.edu.cn</a>
+        </div>
+      </div>
+
+      <section class="section" id="research" aria-labelledby="research-title">
+        <h2 id="research-title">Research interests<span class="cn" lang="zh-Hans">研究方向</span></h2>
+        <div class="section-content">
+          <p class="intro">My research is in harmonic analysis, focusing on Chang–Wilson–Wolff (CWW) theory and multiparameter square functions, Dunkl analysis, and two-weight inequalities.</p>
+          <p class="translation" lang="zh-Hans">我的研究领域是调和分析，主要关注 Chang–Wilson–Wolff（CWW）理论与多参数平方函数、Dunkl 分析以及双权不等式。</p>
+        </div>
+      </section>
+
+      <section class="section" id="education" aria-labelledby="education-title">
+        <h2 id="education-title">Education<span class="cn" lang="zh-Hans">教育背景</span></h2>
+        <div class="section-content">
+          <ol class="education-list">
+            <li class="education-entry">
+              <p class="education-date">2012.09–2017.06</p>
+              <div>
+                <h3>Sun Yat-sen University<span lang="zh-Hans">中山大学</span></h3>
+                <p class="education-degree">Ph.D. in Mathematics</p>
+                <p class="education-cn" lang="zh-Hans">基础数学博士</p>
+                <p class="education-advisor">Advisor: Prof. Lixin Yan · <span lang="zh-Hans">导师：颜立新教授</span></p>
+              </div>
+            </li>
+            <li class="education-entry">
+              <p class="education-date">2008.09–2012.06</p>
+              <div>
+                <h3>Sun Yat-sen University<span lang="zh-Hans">中山大学</span></h3>
+                <p class="education-degree">B.Sc. in Information and Computing Science</p>
+                <p class="education-cn" lang="zh-Hans">信息与计算科学学士（基地班）</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="publications" aria-labelledby="publications-title">
+        <h2 id="publications-title">Selected publications<span class="cn" lang="zh-Hans">精选论文</span></h2>
+        <div class="section-content">
+          <ol class="papers">
+            <li class="paper">
+              <h3><a href="https://doi.org/10.1016/j.jfa.2025.111238">On maximal functions generated by Hörmander-type spectral multipliers</a></h3>
+              <p class="authors">Peng Chen, Xixi Lin, Liangchuan Wu, and Lixin Yan</p>
+              <p class="journal"><cite>Journal of Functional Analysis</cite> <strong>290</strong> (2026), no. 2, Article 111238.</p>
+              <div class="paper-links"><a href="https://doi.org/10.1016/j.jfa.2025.111238">Journal <span lang="zh-Hans">期刊</span> ↗</a><a href="https://arxiv.org/abs/2410.01164">arXiv ↗</a></div>
+            </li>
+            <li class="paper">
+              <h3><a href="https://doi.org/10.1016/j.jde.2025.113748">Global-in-time maximal regularity for the Cauchy problem of the heat equation in BMO and applications</a></h3>
+              <p class="authors">Xuan Thinh Duong, Ji Li, Liangchuan Wu, and Lixin Yan</p>
+              <p class="journal"><cite>Journal of Differential Equations</cite> <strong>451</strong> (2026), Article 113748.</p>
+              <div class="paper-links"><a href="https://doi.org/10.1016/j.jde.2025.113748">Journal <span lang="zh-Hans">期刊</span> ↗</a><a href="https://arxiv.org/abs/2405.01791">arXiv ↗</a></div>
+            </li>
+            <li class="paper">
+              <h3><a href="https://doi.org/10.1016/j.jfa.2025.111028">Schatten classes and commutators of Riesz transforms in the two weight setting</a></h3>
+              <p class="authors">Michael Lacey, Ji Li, Brett D. Wick, and Liangchuan Wu</p>
+              <p class="journal"><cite>Journal of Functional Analysis</cite> <strong>289</strong> (2025), no. 6, Article 111028.</p>
+              <div class="paper-links"><a href="https://doi.org/10.1016/j.jfa.2025.111028">Journal <span lang="zh-Hans">期刊</span> ↗</a><a href="https://arxiv.org/abs/2404.00329">arXiv ↗</a></div>
+            </li>
+            <li class="paper">
+              <h3><a href="https://doi.org/10.1007/s12220-025-02097-y">From Hoeffding’s inequality to Chang–Wilson–Wolff theorem—a unified approach</a></h3>
+              <p class="authors">Liangchuan Wu</p>
+              <p class="journal"><cite>The Journal of Geometric Analysis</cite> <strong>35</strong> (2025), no. 9, Article 261.</p>
+              <div class="paper-links"><a href="https://doi.org/10.1007/s12220-025-02097-y">Journal <span lang="zh-Hans">期刊</span> ↗</a></div>
+            </li>
+            <li class="paper">
+              <h3><a href="https://doi.org/10.1093/imrn/rnz326">Exponential-square integrability, weighted inequalities for the square functions associated to operators, and applications</a></h3>
+              <p class="authors">Peng Chen, Xuan Thinh Duong, Liangchuan Wu, and Lixin Yan</p>
+              <p class="journal"><cite>International Mathematics Research Notices</cite> <strong>2021</strong> (2021), no. 23, 18057–18117.</p>
+              <div class="paper-links"><a href="https://doi.org/10.1093/imrn/rnz326">Journal <span lang="zh-Hans">期刊</span> ↗</a><a href="https://arxiv.org/abs/1609.01516">arXiv ↗</a></div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="preprints" aria-labelledby="preprints-title">
+        <h2 id="preprints-title">Selected preprints<span class="cn" lang="zh-Hans">精选预印本与在投论文</span></h2>
+        <div class="section-content">
+          <ol class="papers">
+            <li class="paper">
+              <h3>Chernoff–Hoeffding inequalities, almost orthogonality and bounded multi-parameter square functions</h3>
+              <p class="authors">Ji Li, Jill Pipher, and Liangchuan Wu</p>
+              <p class="journal">Submitted manuscript · <span lang="zh-Hans">在投</span></p>
+            </li>
+            <li class="paper">
+              <h3><a href="https://arxiv.org/abs/2609.13891">Polynomial corners in finite fields beyond the distinct-degree case</a></h3>
+              <p class="authors">Ji Li, Chun-Yen Shen, Tuyen Trung Truong, and Liangchuan Wu</p>
+              <p class="journal">Submitted manuscript · <span lang="zh-Hans">在投</span></p>
+              <div class="paper-links"><a href="https://arxiv.org/abs/2609.13891">arXiv:2609.13891 ↗</a></div>
+            </li>
+            <li class="paper">
+              <h3><a href="https://arxiv.org/abs/2609.14298">Non-radial Dunkl multipliers at the <span class="math-inline"><i>L</i><sup>2</sup>-Sobolev</span> threshold</a></h3>
+              <p class="authors">Der-Chen Chang, Ji Li, Chaojie Wen, and Liangchuan Wu</p>
+              <p class="journal">Submitted manuscript · <span lang="zh-Hans">在投</span></p>
+              <div class="paper-links"><a href="https://arxiv.org/abs/2609.14298">arXiv:2609.14298 ↗</a></div>
+            </li>
+            <li class="paper">
+              <h3>A full rank-one Dunkl–Riesz two-weight theorem</h3>
+              <p class="authors">Ji Li, Chun-Yen Shen, Brett D. Wick, and Liangchuan Wu</p>
+              <p class="journal">Submitted manuscript · <span lang="zh-Hans">在投</span></p>
+            </li>
+            <li class="paper">
+              <h3><a href="https://arxiv.org/abs/2610.40100">Failure of the <span class="math-inline"><i>H</i><sup>1</sup> × <i>H</i><sup>1</sup> ⟶ <i>L</i><sup>1/2,∞</sup></span> estimate for the lacunary bilinear spherical maximal function</a></h3>
+              <p class="authors">Sanghyuk Lee, Ji Li, Chaojie Wen, and Liangchuan Wu</p>
+              <p class="journal">Submitted manuscript · <span lang="zh-Hans">在投</span></p>
+              <div class="paper-links"><a href="https://arxiv.org/abs/2610.40100">arXiv:2610.40100 ↗</a></div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="monograph" aria-labelledby="monograph-title">
+        <h2 id="monograph-title">Research monograph<span class="cn" lang="zh-Hans">在投研究专著</span></h2>
+        <div class="section-content">
+          <div class="paper">
+            <h3>Chamber Lifting and Calderón–Zygmund Operators in the Dunkl Setting</h3>
+            <p class="authors">Yongsheng Han, Ming-Yi Lee, Ji Li, Brett D. Wick, and Liangchuan Wu</p>
+            <p class="journal">Research monograph, 475 pages · Submitted<br><span lang="zh-Hans">研究专著，475 页 · 在投</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact<span class="cn" lang="zh-Hans">联系方式</span></h2>
+        <div class="section-content">
+          <a class="contact-email" href="mailto:wuliangchuan@ahu.edu.cn">wuliangchuan@ahu.edu.cn</a>
+          <p class="contact-place">Anhui University · <span lang="zh-Hans">安徽大学</span><br>Hefei, China · <span lang="zh-Hans">中国 · 合肥</span></p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <span>© 2026 Liangchuan Wu · <span lang="zh-Hans">吴良川</span></span>
+      <a href="#main">Back to top <span lang="zh-Hans">返回顶部</span> ↑</a>
+    </footer>
+  </div>
+</body>
+</html>
